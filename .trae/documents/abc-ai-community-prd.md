@@ -1,72 +1,79 @@
 ## 1. Product Overview
-ABC AI Community is a professional landing page for showcasing AI technology trends and internal resources. The platform serves as a centralized hub for both external AI developments and internal company AI tools, providing employees and visitors with comprehensive AI technology insights.
+ABC AI Community is a centralized gateway that empowers colleagues with AI toolings, resources and knowledge. It bridges the internal AI ecosystem and provides easy access to both internal and external AI resources.
 
-The product targets technology professionals, AI enthusiasts, and company employees who need to stay updated with the latest AI trends while accessing internal AI resources efficiently.
+The platform serves as a comprehensive hub for AI enthusiasts and professionals within the organization, offering curated lists of tools, models, and educational resources to accelerate AI adoption and learning.
 
 ## 2. Core Features
 
 ### 2.1 User Roles
-No user authentication required for this landing page - all content is publicly accessible.
+This is an internal platform accessible to all colleagues without specific role distinctions. Users can browse and access all resources without authentication requirements.
 
 ### 2.2 Feature Module
-The ABC AI Community landing page consists of the following main sections:
-1. **External AI Trends**: Latest AI model benchmarks, marketplaces, trending technologies, development tools, and CLI tools
-2. **Internal AI Resources**: AI Platform section with company resources, model garden, RAG studio, and AI app store
+The ABC AI Community consists of the following main pages:
+1. **Home page**: Banner with slogan, AI topics section, navigation to other pages.
+2. **Internal AI Resources page**: AI Platform card with three key services, list of internal AI tools.
+3. **External AI Resources page**: Four top charts covering AI models, IDEs, providers, and CLI tools.
 
 ### 2.3 Page Details
-
 | Page Name | Module Name | Feature description |
 |-----------|-------------|---------------------|
-| Landing Page | Hero Section | Display company branding and main navigation with professional tech-focused design |
-| Landing Page | External AI Trends | Show latest AI model benchmarks with performance metrics and comparison data |
-| Landing Page | AI Marketplaces | Display marketplace links (OpenRouter, Qin Cloud, Volcano Engine, Alley Cloud) with descriptions |
-| Landing Page | Trending AI Tech | Showcase trending technologies like MCP agents with ranking and popularity indicators |
-| Landing Page | AI Dev Tools | List popular development tools (Cursor, TRAE, CodeX) with icons and brief descriptions |
-| Landing Page | CLI Tools | Display latest CLI tools (Open Code, Cloud Code, Jemina CLI) with installation links |
-| Landing Page | AI Platform | Company internal platform section with Wiki, Teams, and channel links |
-| Landing Page | Model Garden | Internal model repository with access links and documentation |
-| Landing Page | RAG Studio | Internal RAG development environment access and resources |
-| Landing Page | AI App Store | List of internal AI applications (MCP Hub, Poemed Book) with descriptions and access links |
+| Home page | Banner section | Display slogan "Empowering our colleagues with AI toolings, resources and knowledge. A centralized gateway bridging the internal AI ecosystem" with Apple-like glassmorphism design |
+| Home page | AI Topics section | Show 3-4 AI-related topics below banner with engaging visual cards |
+| Home page | Navigation | Provide clear navigation links to Internal and External AI Resources pages |
+| Internal AI Resources | AI Platform Card | Large prominent card containing three services: Model Garden (list of AI models), RAG Studio (with link and wiki), Document Intelligence (with link and wiki) |
+| Internal AI Resources | Internal Tools List | Display list of internal AI tools including AI Platform, RAG Studio, Prompt Book, MCP Hub. Each tool shows owner, direct link, and wiki page link |
+| External AI Resources | AI Models Chart | Top 10 most popular AI models sourced from SWE Bench with brief descriptions |
+| External AI Resources | AI IDEs Chart | Popular AI IDEs including Cursor, Windsurf, Trae with descriptions and links |
+| External AI Resources | Model Providers Chart | Leading model providers like OpenRouter, Together AI, Hugging Face with descriptions |
+| External AI Resources | AI CLI Tools Chart | Popular CLI tools including Claude Code, OpenInterpreter, Aider with descriptions |
 
 ## 3. Core Process
-Users can freely browse the landing page without authentication. The main flow involves:
-1. User lands on the homepage and sees hero section
-2. User scrolls to explore external AI trends section
-3. User continues to internal AI resources section
-4. User can click on any resource link to access external sites or internal platforms
+Users can navigate through the website to discover AI resources:
+
+**Main User Flow:**
+1. User lands on Home page and sees the empowering slogan with glassmorphism design
+2. User browses AI topics below the banner
+3. User navigates to either Internal or External AI Resources based on needs
+4. In Internal Resources, user explores AI Platform services and internal tools
+5. In External Resources, user discovers top AI models, IDEs, providers, and CLI tools
 
 ```mermaid
 graph TD
-  A[Landing Page] --> B[External AI Trends Section]
-  A --> C[Internal AI Resources Section]
-  B --> D[External Links]
-  C --> E[Internal Resources]
+  A[Home Page] --> B[Internal AI Resources]
+  A --> C[External AI Resources]
+  B --> D[AI Platform Card]
+  B --> E[Internal Tools List]
+  C --> F[AI Models Chart]
+  C --> G[AI IDEs Chart]
+  C --> H[Model Providers Chart]
+  C --> I[AI CLI Tools Chart]
 ```
 
 ## 4. User Interface Design
 
 ### 4.1 Design Style
-- **Primary Colors**: Deep blue (#1976D2) and white for professional tech appearance
-- **Secondary Colors**: Light gray (#F5F5F5) and dark gray (#424242) for contrast
-- **Button Style**: Material Design raised buttons with rounded corners
-- **Font**: Roboto family with sizes 16px for body, 24px for headings, 32px for hero title
-- **Layout Style**: Card-based grid layout with Material Design components
-- **Icons**: Material Design icons for consistency and professional appearance
+- **Primary Colors**: White, light gray, subtle blue accents for glassmorphism effect
+- **Secondary Colors**: Soft gradients, translucent overlays
+- **Button Style**: Rounded corners with glassmorphism effect, subtle shadows
+- **Font**: San Francisco (Apple-like), clean and modern typography
+- **Layout Style**: Card-based layout with generous spacing, glassmorphism panels
+- **Icon Style**: Minimalist line icons, subtle animations on hover
 
 ### 4.2 Page Design Overview
-
 | Page Name | Module Name | UI Elements |
 |-----------|-------------|-------------|
-| Landing Page | Hero Section | Full-width hero with company logo, tagline, and smooth scroll navigation using Material Design App Bar |
-| Landing Page | External AI Trends | Grid of Material cards displaying benchmarks with charts and metrics, responsive 3-column layout on desktop |
-| Landing Page | AI Marketplaces | Horizontal scrolling card list with marketplace logos, names, and brief descriptions |
-| Landing Page | Trending AI Tech | Ranking list with Material Design chips showing technology names and trend indicators |
-| Landing Page | AI Dev Tools | Icon-based grid layout with tool logos, names, and one-line descriptions |
-| Landing Page | CLI Tools | Code-styled cards with CLI command examples and installation buttons |
-| Landing Page | AI Platform | Large feature cards with platform icons and access links using Material Design elevation |
-| Landing Page | Model Garden | Card-based catalog with model thumbnails, names, and documentation links |
-| Landing Page | RAG Studio | Feature highlight card with description and access button |
-| Landing Page | AI App Store | App grid with icons, names, descriptions, and launch buttons |
+| Home page | Banner section | Full-width glassmorphism banner with blurred background, centered slogan text in large, clean font with subtle text shadow |
+| Home page | AI Topics | Horizontal scrollable cards with glass panels, each card has icon, title, and brief description |
+| Internal AI Resources | AI Platform Card | Large translucent card with frosted glass effect, contains three service sections with icons and links |
+| Internal AI Resources | Tools List | Clean table with alternating row colors, each tool has expandable details with owner and links |
+| External AI Resources | Charts | Four-column grid layout on desktop, responsive cards for each chart item with rank, name, and description |
 
 ### 4.3 Responsiveness
-Desktop-first design approach with mobile adaptation. The layout uses responsive grid system that adapts from 3 columns on desktop to 1 column on mobile devices. Touch interactions are optimized for mobile users with appropriate tap targets and swipe gestures for horizontal scrolling sections.
+Desktop-first design approach with mobile adaptation. The layout gracefully scales down for tablets and mobile devices, maintaining the glassmorphism aesthetic while optimizing for smaller screens.
+
+### 4.4 Animation Guidelines
+- Smooth fade-in animations for page loads
+- Subtle hover effects on cards and buttons
+- Gentle parallax scrolling on banner
+- Smooth transitions between pages
+- Micro-animations on interactive elements
